@@ -41,3 +41,38 @@ function updateSelection(buttons, displayId, targetNameId, targetDescId) {
 updateSelection(projectButtons, 'scoop-display', 'selected-project-name', 'selected-project-description');
 updateSelection(toppingButtons, 'scoop-display', 'selected-project-name', 'selected-project-description');
 updateSelection(sauceButtons, 'scoop-display', 'selected-project-name', 'selected-project-description');
+
+const flavorCounter = document.getElementById('flavor-counter');
+const scoopCursor = document.getElementById('scoop-cursor');
+const servedScoop = document.getElementById('served-scoop');
+const servedLabel = document.getElementById('served-label');
+
+if (flavorCounter && scoopCursor) {
+  flavorCounter.addEventListener('pointermove', (event) => {
+    const box = flavorCounter.getBoundingClientRect();
+    scoopCursor.style.left = `${event.clientX - box.left}px`;
+    scoopCursor.style.top = `${event.clientY - box.top}px`;
+  });
+
+  flavorCounter.querySelectorAll('.flavor-tub').forEach((tub) => {
+    tub.addEventListener('click', () => {
+      scoopCursor.classList.remove('dig');
+      servedScoop.classList.remove('scooped');
+      void scoopCursor.offsetWidth;
+      scoopCursor.classList.add('dig');
+      servedScoop.style.background = `linear-gradient(145deg, ${tub.dataset.color}, ${tub.dataset.accent})`;
+      servedLabel.textContent = tub.dataset.name;
+      servedScoop.classList.add('scooped');
+    });
+  });
+}
+
+toppingButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const preview = document.querySelector('.selected-sprinkle');
+    if (!preview) return;
+    preview.classList.remove('sprinkling');
+    void preview.offsetWidth;
+    preview.classList.add('sprinkling');
+  });
+});
