@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sauces Station | Iris' Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="station-screen sauce-screen">
+    <div class="station-shell">
+      <header class="station-header">
+        <a class="back-link" href="index.html">← back to shop</a>
+        <div>
+          <p class="eyebrow">station 03</p>
+          <h2>Syrup & Sauce Bar</h2>
+        </div>
+      </header>
+      <nav class="order-progress" aria-label="Build your ice cream"><a href="flavors.html">1 · scoop</a><a href="toppings.html">2 · top</a><span class="current">3 · drizzle</span></nav>
+
+      <main class="station-layout">
+        <aside class="selector-panel">
+          <h3>Hobbies + interests</h3>
+          <div class="choice-grid">
+            <button class="sauce-button active" data-name="Travel & Food Finds" data-description="I love exploring new places, collecting local stories, and tasting what makes each city feel memorable." data-color="#ff9aad" data-accent="#f26f8a">
+              <span class="swatch" style="background: linear-gradient(135deg, #ff9aad, #f26f8a);"></span>
+              Travel & Food Finds
+            </button>
+            <button class="sauce-button" data-name="Film & Visual Moodboards" data-description="I collect inspiration from movies, cinematography, color, and the emotional punch of a strong visual mood." data-color="#8ad7f4" data-accent="#4ab0d8">
+              <span class="swatch" style="background: linear-gradient(135deg, #8ad7f4, #4ab0d8);"></span>
+              Film & Visual Moodboards
+            </button>
+            <button class="sauce-button" data-name="Creative Cooking" data-description="I enjoy making recipes, experimenting with flavors, and turning everyday ideas into something comforting." data-color="#ffc36d" data-accent="#f59e2e">
+              <span class="swatch" style="background: linear-gradient(135deg, #ffc36d, #f59e2e);"></span>
+              Creative Cooking
+            </button>
+            <button class="sauce-button" data-name="Nature Walks" data-description="I recharge with slow walks, fresh air, and noticing the textures, colors, and rhythm of the world around me." data-color="#96d08d" data-accent="#5aa75d">
+              <span class="swatch" style="background: linear-gradient(135deg, #96d08d, #5aa75d);"></span>
+              Nature Walks
+            </button>
+          </div>
+        </aside>
+
+        <section class="service-stage">
+          <div class="order-ticket">
+            <p class="ticket-label">favorite drizzle</p>
+            <h3 id="selected-project-name">Travel & Food Finds</h3>
+            <p id="selected-project-description">
+              I love exploring new places, collecting local stories, and tasting what makes each city feel memorable.
+            </p>
+            <div class="tag-row">
+              <span>new places</span>
+              <span>stories</span>
+              <span>curiosity</span>
+            </div>
+          </div>
+
+          <div class="sauce-stage"><div class="sundae-cup" aria-hidden="true"><div class="sundae-cream"></div></div>
+            <div class="drizzle-glass" id="scoop-display" aria-label="Selected interest">
+              <span class="drizzle-stripe stripe-one"></span>
+              <span class="drizzle-stripe stripe-two"></span>
+              <span class="drizzle-stripe stripe-three"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="station-footer">
+        <a href="index.html">back home</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

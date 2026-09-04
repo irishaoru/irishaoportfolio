@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flavor Station | Iris' Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="station-screen flavor-screen">
+    <div class="station-shell">
+      <header class="station-header">
+        <a class="back-link" href="index.html">← back to shop</a>
+        <div>
+          <p class="eyebrow">station 01</p>
+          <h2>Flavor Station</h2>
+        </div>
+      </header>
+      <nav class="order-progress" aria-label="Build your ice cream"><span class="current">1 · scoop</span><span>2 · top</span><span>3 · drizzle</span></nav>
+
+      <main class="station-layout">
+        <aside class="selector-panel">
+          <h3>Ice cream flavors</h3>
+          <div class="choice-grid">
+            <button class="flavor-button active" data-name="Sunny Citrus Bloom" data-description="A bright, layered website concept built around playful storytelling, warm gradients, and smooth interactions." data-color="#f6c46d" data-accent="#f2a65a">
+              <span class="swatch" style="background: linear-gradient(135deg, #f6c46d, #f2a65a);"></span>
+              Sunny Citrus Bloom
+            </button>
+            <button class="flavor-button" data-name="Berry Carousel" data-description="A polished portfolio experience with gallery-style layouts, vivid color decisions, and a strong visual narrative." data-color="#f29bb7" data-accent="#d76da1">
+              <span class="swatch" style="background: linear-gradient(135deg, #f29bb7, #d76da1);"></span>
+              Berry Carousel
+            </button>
+            <button class="flavor-button" data-name="Mint Motion" data-description="A crisp UI system focused on usability, clean structure, and delightful micro-interactions that feel effortless." data-color="#8ad7c3" data-accent="#4bb69d">
+              <span class="swatch" style="background: linear-gradient(135deg, #8ad7c3, #4bb69d);"></span>
+              Mint Motion
+            </button>
+            <button class="flavor-button" data-name="Midnight Cocoa" data-description="A deeper, more technical build with product thinking, motion design, and thoughtful front-end craftsmanship." data-color="#8c7fa8" data-accent="#5b4d7f">
+              <span class="swatch" style="background: linear-gradient(135deg, #8c7fa8, #5b4d7f);"></span>
+              Midnight Cocoa
+            </button>
+          </div>
+        </aside>
+
+        <section class="service-stage">
+          <div class="order-ticket">
+            <p class="ticket-label">current special</p>
+            <h3 id="selected-project-name">Sunny Citrus Bloom</h3>
+            <p id="selected-project-description">
+              A bright, layered website concept built around playful storytelling, warm gradients, and smooth interactions.
+            </p>
+            <div class="tag-row">
+              <span>branding</span>
+              <span>web design</span>
+              <span>ux</span>
+            </div>
+          </div>
+
+          <div class="scoop-stage">
+            <div class="display-scoop" id="scoop-display" aria-label="Selected project flavor">
+              <div class="scoop scoop-large" id="scoop-color"><span class="scoop-shine"></span></div>
+              <div class="cone-small"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="station-footer">
+        <a href="toppings.html">next: toppings →</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

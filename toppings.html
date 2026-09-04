@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toppings Station | Iris' Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="station-screen topping-screen">
+    <div class="station-shell">
+      <header class="station-header">
+        <a class="back-link" href="index.html">← back to shop</a>
+        <div>
+          <p class="eyebrow">station 02</p>
+          <h2>Toppings Bar</h2>
+        </div>
+      </header>
+      <nav class="order-progress" aria-label="Build your ice cream"><a href="flavors.html">1 · scoop</a><span class="current">2 · top</span><span>3 · drizzle</span></nav>
+
+      <main class="station-layout">
+        <aside class="selector-panel">
+          <h3>Skills + tools</h3>
+          <div class="choice-grid">
+            <button class="topping-button active" data-name="Product Storytelling" data-description="I shape ideas into clear experiences through research, messaging, and visual direction." data-color="#ff9f6b" data-accent="#ff7f50">
+              <span class="swatch" style="background: linear-gradient(135deg, #ff9f6b, #ff7f50);"></span>
+              Product Storytelling
+            </button>
+            <button class="topping-button" data-name="Design Systems" data-description="I build reusable interfaces with strong hierarchy, clarity, and polished detail across products and pages." data-color="#ffe28a" data-accent="#f7c948">
+              <span class="swatch" style="background: linear-gradient(135deg, #ffe28a, #f7c948);"></span>
+              Design Systems
+            </button>
+            <button class="topping-button" data-name="Front-end Development" data-description="I turn layouts into responsive, interactive experiences using thoughtful code and careful structure." data-color="#9ae6d9" data-accent="#4cc7b3">
+              <span class="swatch" style="background: linear-gradient(135deg, #9ae6d9, #4cc7b3);"></span>
+              Front-end Dev
+            </button>
+            <button class="topping-button" data-name="Research + Prototyping" data-description="I test ideas quickly, iterate on feedback, and refine concepts until the experience feels natural." data-color="#cbb8ff" data-accent="#8d72d9">
+              <span class="swatch" style="background: linear-gradient(135deg, #cbb8ff, #8d72d9);"></span>
+              Research + Prototyping
+            </button>
+          </div>
+        </aside>
+
+        <section class="service-stage">
+          <div class="order-ticket">
+            <p class="ticket-label">tool stack</p>
+            <h3 id="selected-project-name">Product Storytelling</h3>
+            <p id="selected-project-description">
+              I shape ideas into clear experiences through research, messaging, and visual direction.
+            </p>
+            <div class="tag-row">
+              <span>Figma</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+
+          <div class="topping-stage"><div class="base-cup" aria-hidden="true"><span></span></div>
+            <div class="selected-sprinkle" id="scoop-display" aria-label="Selected skill">
+              <span class="mini-dots"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="station-footer">
+        <a href="sauces.html">next: syrups & sauces →</a>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
